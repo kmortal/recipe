@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+.material-symbols-outlined{
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 700,
+  'GRAD' 200,
+  'opsz' 48;
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+    padding: 3vh 12.5vw 0;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+#title{
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+
+    width: 85vw;
+    margin: 5vh 0 3vh;
+}
+
+#text{
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4F4F4F;
+
+    width: 45vw;
+    float: left;
+}
+
+#svg{
+    float: left;
+
+    margin: 0.3em 1em 0 0;
+}
+
+
+#png{
+    margin: 3em 0;
+    width: 60rem;
+    height: 30rem;
+}
+
+h2{
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+    margin-bottom: 6vh;
+}
+
+h3{
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+    margin: 3em 0;
+    text-align: start;
+}
+
+main p{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #333333;
+}
+
+section{
+    margin-bottom: 2em;
+    width: 50%;
+}
+
+input{
+    float: inline-start;
+    clear: both;
+    width: 1.5em;
+    height: 1.6em;
+    margin-right: 1em;
+}
+
+input:checked + p{
+    color: rgba(0, 0, 255, 0.5);
+}
+
+p span{
+    font-style: italic;
+}
+
+.container{
+    width: 17em;
+    height: 24em;
+    padding: 3em 2em;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    position: absolute;
+    left: 63vw;
+    top: 48em;
+    display: flex;
+    flex-direction: column;
+}
+
+.message{
+    width: 13em;
+}
+
+.message h5{
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 13.3px;
+    line-height: 12px;
+    color: #BDBDBD;
+
+    margin-bottom: 0.5em;
+}
+
+.message p{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 21px;
+    line-height:17px;
+    color: #333333;
+}
+
+.yield .message p{
+    color: #F2994A;
+}
+
+.material-symbols-outlined{font-variation-settings:'FILL' 0}
+
+li{
+    color: white;
+    margin-bottom: 3em;
+    position: relative;
+    margin-left: 1.5em;
+}
+
+li::before {
+    content: '';
+    position: absolute;
+    left: -1.5em;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 4px;
+    background-color: #F2994A;
+
+    z-index: -1;
+}
+
+li p{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    width: 50%;
+}
+
+@media (max-width:1150px){
+    body{
+        padding: 0 10vw;
+    }
+
+    #title{
+        width: 65vw;
+        font-size: 33px;
+    }
+
+    #text{
+        width: 50vw;
+        font-size: 12px;
+    }
+
+    #png{
+        width: 30em;
+        height: 15em;
+        margin-bottom: 6em;
+    }
+    .container{
+        position: initial;
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        
+        align-items: end;
+        box-shadow: initial;
+
+        margin-bottom: 1em;
+
+        width: 21em;
+        height: 3em;
+        padding: 0;
+    }
+
+    .container section{
+        width: 1em;
+    }
+
+    .message{
+        width: 8em;
+        height: 2.5em;
+    }
+
+    .message h5{
+        width: 10em;
+        font-size: 8px;
+    }
+
+    .message p{
+        font-size: 14px;
+    }
+
+    .material-symbols-outlined{
+        margin-right: 0.25em;
+    }
+    
+    .yield{
+        position: absolute;
+        height: 4em;
+    }
+
+    main h2{
+        font-size: 18px;
+        margin: 1em 0;
+    }
+
+    main h3{
+        font-size: 16px;
+        margin: 1em 0;
+        width: 35vw;
+    }
+
+    section label p, li p{
+        width: 75vw;
+        font-size: 14px;
+    }
+
+    input{
+        height: 1.25em;
+        width: 1.25;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 660px){
+    body{
+        padding: 0 5vw;
+    }
+    
+    #title{
+        font-size: 24px;
+    }
+
+    #text{
+        font-size: 12px;
+        width: 75vw;
+    }
+
+    #png{
+        width: 90vw;
+    }
+
+    .message p{
+        font-size: 10px;
+    }
+
+    input{
+        height: 1em;
+        width: 1em;
+        margin-top: 0.5em;
+    }
+
+    section label p, li{
+        width: 85vw;
+    }
+}
